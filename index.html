@@ -15,16 +15,17 @@
 <body>
     <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] font-poppins bg-no-repeat bg-center">
         <!-- homepage section -->
-        <section class="home-page min-h-screen text-white flex flex-col justify-center items-center hidden">
+        <section id="home-page" class="min-h-screen text-white flex flex-col justify-center items-center">
             <div class="flex flex-col items-center gap-10">
                 <h1 class="text-9xl font-anton tracking-wide uppercase">Alphabet Clash</h1>
                 <p class="text-xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn bg-white text-black text-xl hover:bg-[#010313] hover:text-white">Play
+                <button onclick="play()"
+                    class="btn bg-white text-black text-xl hover:bg-[#010313] hover:text-white">Play
                     Now</button>
             </div>
         </section>
         <!-- playground section -->
-        <section class="play-ground hidden">
+        <section id="play-ground" class="hidden">
             <div class="flex flex-col items-center gap-20 pt-20">
                 <!-- screen -->
                 <div
@@ -34,43 +35,43 @@
                         </p>
                     </div>
                     <div class="flex justify-center items-center h-full pb-12">
-                        <p class="text-[#010313] text-9xl font-bold">Y</p>
+                        <p id="current-letter" class="text-[#010313] text-9xl font-bold uppercase">Y</p>
                     </div>
                 </div>
                 <!-- keyboard -->
                 <div>
                     <div class="flex justify-center gap-2 my-2 w-full">
-                        <kbd class="font-bold kbd">q</kbd>
-                        <kbd class="font-bold kbd">w</kbd>
-                        <kbd class="font-bold kbd">e</kbd>
-                        <kbd class="font-bold kbd">r</kbd>
-                        <kbd class="font-bold kbd">t</kbd>
-                        <kbd class="font-bold kbd">y</kbd>
-                        <kbd class="font-bold kbd">u</kbd>
-                        <kbd class="font-bold kbd">i</kbd>
-                        <kbd class="font-bold kbd">o</kbd>
-                        <kbd class="font-bold kbd">p</kbd>
+                        <kbd id="q" class="font-bold text-xl kbd">q</kbd>
+                        <kbd id="w" class="font-bold text-xl kbd">w</kbd>
+                        <kbd id="e" class="font-bold text-xl kbd">e</kbd>
+                        <kbd id="r" class="font-bold text-xl kbd">r</kbd>
+                        <kbd id="t" class="font-bold text-xl kbd">t</kbd>
+                        <kbd id="y" class="font-bold text-xl kbd">y</kbd>
+                        <kbd id="u" class="font-bold text-xl kbd">u</kbd>
+                        <kbd id="i" class="font-bold text-xl kbd">i</kbd>
+                        <kbd id="o" class="font-bold text-xl kbd">o</kbd>
+                        <kbd id="p" class="font-bold text-xl kbd">p</kbd>
                     </div>
                     <div class="flex justify-center gap-2 my-2 w-full">
-                        <kbd class="font-bold kbd">a</kbd>
-                        <kbd class="font-bold kbd">s</kbd>
-                        <kbd class="font-bold kbd">d</kbd>
-                        <kbd class="font-bold kbd">f</kbd>
-                        <kbd class="font-bold kbd">g</kbd>
-                        <kbd class="font-bold kbd">h</kbd>
-                        <kbd class="font-bold kbd">j</kbd>
-                        <kbd class="font-bold kbd">k</kbd>
-                        <kbd class="font-bold kbd">l</kbd>
+                        <kbd id="a" class="font-bold text-xl kbd">a</kbd>
+                        <kbd id="s" class="font-bold text-xl kbd">s</kbd>
+                        <kbd id="d" class="font-bold text-xl kbd">d</kbd>
+                        <kbd id="f" class="font-bold text-xl kbd">f</kbd>
+                        <kbd id="g" class="font-bold text-xl kbd">g</kbd>
+                        <kbd id="h" class="font-bold text-xl kbd">h</kbd>
+                        <kbd id="j" class="font-bold text-xl kbd">j</kbd>
+                        <kbd id="k" class="font-bold text-xl kbd">k</kbd>
+                        <kbd id="l" class="font-bold text-xl kbd">l</kbd>
                     </div>
                     <div class="flex justify-center gap-2 my-2 w-full">
-                        <kbd class="font-bold kbd">z</kbd>
-                        <kbd class="font-bold kbd">x</kbd>
-                        <kbd class="font-bold kbd">c</kbd>
-                        <kbd class="font-bold kbd">v</kbd>
-                        <kbd class="font-bold kbd">b</kbd>
-                        <kbd class="font-bold kbd">n</kbd>
-                        <kbd class="font-bold kbd">m</kbd>
-                        <kbd class="font-bold kbd">/</kbd>
+                        <kbd id="z" class="font-bold text-xl kbd">z</kbd>
+                        <kbd id="x" class="font-bold text-xl kbd">x</kbd>
+                        <kbd id="c" class="font-bold text-xl kbd">c</kbd>
+                        <kbd id="v" class="font-bold text-xl kbd">v</kbd>
+                        <kbd id="b" class="font-bold text-xl kbd">b</kbd>
+                        <kbd id="n" class="font-bold text-xl kbd">n</kbd>
+                        <kbd id="m" class="font-bold text-xl kbd">m</kbd>
+                        <kbd id="/" class="font-bold text-xl kbd">/</kbd>
                     </div>
                 </div>
                 <!-- life-score -->
@@ -89,7 +90,7 @@
             </div>
         </section>
         <!-- scorecard section -->
-        <section class="score-card flex justify-center items-center min-h-screen">
+        <section id="score-card" class="flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-5 bg-[#FFFFFF33] p-10 rounded-xl">
                 <h1 class="text-6xl">
                     <span class="font-bold">Score: </span>
@@ -100,6 +101,8 @@
             </div>
         </section>
     </main>
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/alpha-clash.js"></script>
 </body>
 
 </html>
