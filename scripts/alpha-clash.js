@@ -49,7 +49,7 @@ function startGame() {
     // add event listener for keyup event
     document.addEventListener('keyup', handleKeyUpEvent);
 
-    // hide homepage and final-score and show only playgrond
+    // hide homepage and final-score and show only playground
     hideElementById('home-page');
     hideElementById('score-card');
     showElementById('play-ground');
