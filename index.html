@@ -13,19 +13,19 @@
 </head>
 
 <body>
-    <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
-        <!-- home section -->
-        <section class="home min-h-screen text-white flex flex-col justify-center items-center hidden">
+    <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] font-poppins bg-no-repeat bg-center">
+        <!-- homepage section -->
+        <section class="home-page min-h-screen text-white flex flex-col justify-center items-center hidden">
             <div class="flex flex-col items-center gap-10">
                 <h1 class="text-9xl font-anton tracking-wide uppercase">Alphabet Clash</h1>
-                <p class="font-poppins text-xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn bg-white text-black text-xl font-poppins hover:bg-[#010313] hover:text-white">Play
+                <p class="text-xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button class="btn bg-white text-black text-xl hover:bg-[#010313] hover:text-white">Play
                     Now</button>
             </div>
         </section>
         <!-- playground section -->
-        <section class="play-ground">
-            <div class="flex flex-col items-center gap-24 pt-20">
+        <section class="play-ground hidden">
+            <div class="flex flex-col items-center gap-20 pt-20">
                 <!-- screen -->
                 <div
                     class="artboard artboard-horizontal phone-5 bg-[#FFFFFFB3] border-[20px] rounded-2xl border-[#010313CC]">
@@ -39,38 +39,38 @@
                 </div>
                 <!-- keyboard -->
                 <div>
-                    <div class="flex justify-center gap-1 my-1 w-full">
-                        <kbd class="kbd">q</kbd>
-                        <kbd class="kbd">w</kbd>
-                        <kbd class="kbd">e</kbd>
-                        <kbd class="kbd">r</kbd>
-                        <kbd class="kbd">t</kbd>
-                        <kbd class="kbd">y</kbd>
-                        <kbd class="kbd">u</kbd>
-                        <kbd class="kbd">i</kbd>
-                        <kbd class="kbd">o</kbd>
-                        <kbd class="kbd">p</kbd>
+                    <div class="flex justify-center gap-2 my-2 w-full">
+                        <kbd class="font-bold kbd">q</kbd>
+                        <kbd class="font-bold kbd">w</kbd>
+                        <kbd class="font-bold kbd">e</kbd>
+                        <kbd class="font-bold kbd">r</kbd>
+                        <kbd class="font-bold kbd">t</kbd>
+                        <kbd class="font-bold kbd">y</kbd>
+                        <kbd class="font-bold kbd">u</kbd>
+                        <kbd class="font-bold kbd">i</kbd>
+                        <kbd class="font-bold kbd">o</kbd>
+                        <kbd class="font-bold kbd">p</kbd>
                     </div>
-                    <div class="flex justify-center gap-1 my-1 w-full">
-                        <kbd class="kbd">a</kbd>
-                        <kbd class="kbd">s</kbd>
-                        <kbd class="kbd">d</kbd>
-                        <kbd class="kbd">f</kbd>
-                        <kbd class="kbd">g</kbd>
-                        <kbd class="kbd">h</kbd>
-                        <kbd class="kbd">j</kbd>
-                        <kbd class="kbd">k</kbd>
-                        <kbd class="kbd">l</kbd>
+                    <div class="flex justify-center gap-2 my-2 w-full">
+                        <kbd class="font-bold kbd">a</kbd>
+                        <kbd class="font-bold kbd">s</kbd>
+                        <kbd class="font-bold kbd">d</kbd>
+                        <kbd class="font-bold kbd">f</kbd>
+                        <kbd class="font-bold kbd">g</kbd>
+                        <kbd class="font-bold kbd">h</kbd>
+                        <kbd class="font-bold kbd">j</kbd>
+                        <kbd class="font-bold kbd">k</kbd>
+                        <kbd class="font-bold kbd">l</kbd>
                     </div>
-                    <div class="flex justify-center gap-1 my-1 w-full">
-                        <kbd class="kbd">z</kbd>
-                        <kbd class="kbd">x</kbd>
-                        <kbd class="kbd">c</kbd>
-                        <kbd class="kbd">v</kbd>
-                        <kbd class="kbd">b</kbd>
-                        <kbd class="kbd">n</kbd>
-                        <kbd class="kbd">m</kbd>
-                        <kbd class="kbd">/</kbd>
+                    <div class="flex justify-center gap-2 my-2 w-full">
+                        <kbd class="font-bold kbd">z</kbd>
+                        <kbd class="font-bold kbd">x</kbd>
+                        <kbd class="font-bold kbd">c</kbd>
+                        <kbd class="font-bold kbd">v</kbd>
+                        <kbd class="font-bold kbd">b</kbd>
+                        <kbd class="font-bold kbd">n</kbd>
+                        <kbd class="font-bold kbd">m</kbd>
+                        <kbd class="font-bold kbd">/</kbd>
                     </div>
                 </div>
                 <!-- life-score -->
@@ -88,9 +88,16 @@
                 </div>
             </div>
         </section>
-        <!-- score section -->
-        <section class="score">
-
+        <!-- scorecard section -->
+        <section class="score-card flex justify-center items-center min-h-screen">
+            <div class="text-white text-center space-y-5 bg-[#FFFFFF33] p-10 rounded-xl">
+                <h1 class="text-6xl">
+                    <span class="font-bold">Score: </span>
+                    <span>14</span>
+                </h1>
+                <button class="btn bg-white text-black text-xl hover:bg-[#010313] hover:text-white">Play Again</button>
+                <p>Practice will make you perfect</p>
+            </div>
         </section>
     </main>
 </body>
